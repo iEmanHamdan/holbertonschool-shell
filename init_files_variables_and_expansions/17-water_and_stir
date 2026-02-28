@@ -1,0 +1,2 @@
+#!/bin/bash
+printf "obase=10\nibase=5\n$(echo $WATER | tr 'water' '01234') + $(echo $STIR | tr 'stir.' '01234')\n" | bc | tr '0123456789' 'bestchol'
